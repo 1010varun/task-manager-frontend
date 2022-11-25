@@ -28,7 +28,7 @@ const TaskCard = ({func, cardData, cardId}) => {
       <div className="text-start w-11/12 my-auto overflow-auto">{cardData}</div>
       <div className="flex mx-auto sm:mr-1">
         <button onClick={() => {
-          EditTask({cardId, func})}}>
+          EditTask({cardId, cardData, func})}}>
           <AiOutlineEdit size={25} />
         </button>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;

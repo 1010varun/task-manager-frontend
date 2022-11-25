@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const EditTask = async ({ cardId, func }) => {
-  let newTask = prompt("Enter Updated Task: ");
+const EditTask = async ({ cardId, cardData,  func }) => {
+  let newTask = prompt("Enter Updated Task: ", cardData);
 //   const url = 'http://localhost:5000/modifyTask/';
   const url = "https://t-manager-node.herokuapp.com/modifyTask/";
   if(newTask.length === 0 || newTask === " "){
