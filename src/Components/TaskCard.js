@@ -24,7 +24,7 @@ const TaskCard = ({func, cardData, cardId}) => {
 
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 bg-white border rounded-md shadow-md md:flex-row w-4/5 lg:w-4/6 xl:w-3/6 mx-auto  dark:border-gray-700 dark:bg-gray-800 mt-5 p-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 bg-white border rounded-md shadow-md md:flex-row w-4/5 lg:w-4/6 xl:w-3/6 mx-auto mt-5 p-3">
       <div className="text-start w-11/12 my-auto overflow-auto">{cardData}</div>
       <div className="flex mx-auto sm:mr-1">
         <button onClick={() => {
