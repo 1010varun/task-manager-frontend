@@ -21,7 +21,7 @@ const App = () => {
     }else if(type === 3){
       toast.info(message, { theme: "dark" });
     }
-    window.location.reload();
+    // window.location.reload();
     // setTimeout(window.location.reload(), 20000);
   }
 
