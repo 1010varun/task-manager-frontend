@@ -4,7 +4,7 @@ const EditTask = async ({ cardId, func }) => {
   let newTask = prompt("Enter Updated Task: ");
 //   const url = 'http://localhost:5000/modifyTask/';
   const url = "https://t-manager-node.herokuapp.com/modifyTask/";
-  if(newTask.length === 0){
+  if(newTask.length === 0 || newTask === " "){
     return func("Enter some task", 2);
   }
 

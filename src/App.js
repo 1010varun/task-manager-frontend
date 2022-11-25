@@ -22,7 +22,7 @@ const App = () => {
       toast.info(message, { theme: "dark" });
     }
     // window.location.reload();
-    // setTimeout(window.location.reload(), 20000);
+    setTimeout(() => window.location.reload(), 2000);
   }
 
   const [value, setValue] = useState([]);
@@ -50,7 +50,7 @@ const App = () => {
       {value.length !== 0 ? (
         <h1 className="text-center text-2xl">All Tasks</h1>
       ) : (
-        <h1 className="text-center text-2xl">No tasks</h1>
+        <h1 className="text-center text-2xl">No task</h1>
       )}
       {value.map((item) => {
         return <TaskCard cardData={item.task} cardId={item.id} key={item.id} func = {toastFunction}/>;

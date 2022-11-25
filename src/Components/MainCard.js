@@ -13,7 +13,8 @@ const MainCard = ({func}) => {
 
   const addTask = async () => {
     console.log("in function");
-    if(taskdata.length === 0){
+    if(taskdata.length === 0 || taskdata === " "){
+      setTaskdata("");
       return func("Unable to Add Empty Task", 2);
       
     }
@@ -42,7 +43,7 @@ const MainCard = ({func}) => {
               id="floating_filled"
               value={taskdata}
               onChange={(e) => setTaskdata(e.target.value)}
-              className="block rounded-t-lg px-2.5 pb-1 pt-5 w-full sm:w-10/12 md:w-9/12 xl:w-8/12 mx-auto text-md text-gray-900 bg-white dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer mb-5"
+              className="block rounded-t-lg px-2.5 pb-1 pt-5 w-full sm:w-10/12 md:w-9/12 xl:w-8/12 mx-auto text-md text-gray-900 bg-white border-0 border-b-2 appearance-none dark:text-white dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer mb-5"
               placeholder=" "
             />
             <label
