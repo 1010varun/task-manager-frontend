@@ -27,7 +27,8 @@ const App = () => {
 
   const [value, setValue] = useState([]);
   // const url = "http://localhost:5000/task";
-  const url = "https://t-manager-node.herokuapp.com/task";
+  // const url = "https://t-manager-node.herokuapp.com/task";
+  const url = "https://task-manager-backend-bcxk.onrender.com/task";
 
   const fetchData = async () => {
     await axios({

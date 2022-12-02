@@ -8,7 +8,8 @@ const MainCard = ({func}) => {
   const [taskdata, setTaskdata] = useState("");
 
   // const url = "http://localhost:5000/appendTask";
-  const url = "https://t-manager-node.herokuapp.com/appendTask";
+  // const url = "https://t-manager-node.herokuapp.com/appendTask";
+  const url = "https://task-manager-backend-bcxk.onrender.com/appendTask";
 
 
   const addTask = async () => {

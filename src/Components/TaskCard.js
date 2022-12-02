@@ -7,7 +7,8 @@ import EditTask from "./EditTask";
 const TaskCard = ({func, cardData, cardId}) => {
 
   // const url = 'http://localhost:5000/delete/';
-  const url = "https://t-manager-node.herokuapp.com/delete/";
+  // const url = "https://t-manager-node.herokuapp.com/delete/";
+  const url = "https://task-manager-backend-bcxk.onrender.com/delete/";
 
   const deleteTask = async () => {
     await axios({
